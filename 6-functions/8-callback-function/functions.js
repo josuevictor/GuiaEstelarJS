@@ -8,9 +8,13 @@ function sayMyName(name){
 
     console.log('depois de executar e callback')
 
-    return name
-
 }
+
+sayMyName(
+    () => {
+        console.log('estou em um callback')
+    }
+)
 
 //sayMyName('Victor')
 
@@ -19,9 +23,3 @@ function sayMyName(name){
            lastName: 'Victor',
            year: 21,
            color: 'blue'})*/
-
-sayMyName(
-    () => {
-        console.log('estou em um callback')
-    }
-)
