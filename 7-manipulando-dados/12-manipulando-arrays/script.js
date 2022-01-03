@@ -23,5 +23,10 @@ techs.unshift('sql')
 //encontar a posição de um elemento no array
 let index = techs.indexOf('css')
 
+//colocando array em ordem crescente
+let array = [1, 5, 8, 9, 4, 3, 2, 7, 6]
+array.sort()
 
-console.log(index)
+
+
+console.log(array)
