@@ -4,10 +4,10 @@
 // resultará emverdadeiro e falso.
 
 let pao = true
-let queijo = true
+let queijo = false
 
 // AND &&
-
+console.log(pao && queijo)
 // OR ||
 
 // NOT !
