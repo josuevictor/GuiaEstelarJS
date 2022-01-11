@@ -10,34 +10,30 @@ para o sistema de notas em caracteres tipo A B C.
 * menor que 60   -  F
 
 */
-/*
-let nota = 100
-function ConverteNota(){
+
+function ConverteNota(nota){
     
-    switch (nota) {
-        case nota <= 100 && nota >= 90:
-            console.log('Nota: A')            
-            break;
-        case nota = 90:
-            console.log('Nota: B')
-            break
-        default:
-            console.log('Error')
-            break;
+    if(nota >= 90 && nota <= 100){
+        console.log('Nota: A')
+    }else if(nota >= 80 && nota <= 89){
+        console.log('Nota: B')
+    }else if(nota >= 70 && nota <= 79){
+        console.log('Nota: C')
+    }else if(nota >= 60 && nota <= 69){
+        console.log('Nota: D')
+    }else if(nota < 60 && nota >= 0){
+        console.log('Nota: F' + ' Reprovado :(')
+    }else{
+        console.log('Nota inválida')
     }
 }
-ConverteNota()
-console.log(nota)
-*/
-let nota = 100
-switch (nota) {
-    case nota >= 90 && nota <= 100:
-        console.log('Nota: A')            
-        break;
-    case nota >= 80 && nota <= 89:
-        console.log('Nota: B')
-        break
-    default:
-        console.log('Error')
-        break;
-}
+ConverteNota(100)
+ConverteNota(60)
+ConverteNota(1000)
+ConverteNota(80)
+ConverteNota(50)
+ConverteNota(30)
+ConverteNota(0)
+
+
+/*--------------------------------------------------------------*/
